@@ -13,13 +13,6 @@ $ composer require mikescott/slim3-minifier "2.*"
 
 ### Usage
 
-Used like this the minifier will use its default options:
-
-* HTML5 doctype
-* Linebreaks are removed
-* Comments are preserved
-* Duplicate attributes are removed
-
 ```php
 <?php
 require 'vendor/autoload.php';

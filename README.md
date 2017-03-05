@@ -32,7 +32,7 @@ $app->add(new Minifier());
 ```
 
 ### Advanced Usage
-To changed the default options:
+To change the default options:
 
 ```php
 <?php
@@ -60,7 +60,7 @@ doctype             | `HTMLMinify::DOCTYPE_HTML5`<br/>`HTMLMinify::DOCTYPE_XHTML
 removeComment       | `true` or `false`                                   | `false`
 removeDuplicateAttribute | `true` or `false`                              | `true`
 
-Please refer to the documentation of [zaininnari/html-minifier](https://github.com/zaininnari/html-minifier) for full descriptions of these options. Note that the default options used by this package differ 
+Please refer to the documentation of [zaininnari/html-minifier](https://github.com/zaininnari/html-minifier) for full descriptions of these options. Note that the default options used by this package differ from html-minifier's.
 
 
 ## License

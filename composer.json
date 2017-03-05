@@ -1,0 +1,23 @@
+{
+    "name": "mikescott/slim3-minifier",
+	"description": "A middleware for Slim 3 that minifies HTML output",
+	"keywords": ["slim", "slim3", "html", "minify", "minifier"],
+	"homepage": "https://github.com/mikescott/slim3-minifier",
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Michael Scott",
+            "homepage": "https://github.com/mikescott/"
+        }
+    ],
+	"require": {
+        "php": ">=5.5.0",
+        "slim/slim": ">=3.0",
+        "zaininnari/html-minifier": "*"
+    },
+    "autoload": {
+        "psr-0" : {
+            "MikeScott\\Minifier" : "src"
+        }
+    }
+}

@@ -6,12 +6,12 @@ A middleware for the [Slim framework](https://github.com/slimphp/Slim/) that pro
 Installation is via [Composer](https://getcomposer.org/):
 
 ```bash
-$ composer require mikescott/slim3-minifier "1.*"
+$ composer require mikescott/slim3-minifier "2.*"
 ```
 
 ## Usage
 
-### Basic Usage
+### Usage
 
 Used like this the minifier will use its default options:
 
@@ -30,38 +30,6 @@ use MikeScott\Minifier\Minifier;
 $app = new App();
 $app->add(new Minifier());
 ```
-
-### Advanced Usage
-To change the default options:
-
-```php
-<?php
-require 'vendor/autoload.php';
-
-use Slim\App;
-use MikeScott\Minifier\Minifier;
-use zz\Html\HTMLMinify;
-
-$app = new App();
-$app->add(new Minifier([
-        'optimizationLevel'        => HTMLMinify::OPTIMIZATION_SIMPLE,
-        'doctype'                  => HTMLMinify::DOCTYPE_XHTML1,
-        'removeComment'            => true,
-        'removeDuplicateAttribute' => false
-    ]
-));
-```
-
-## Configuration
-Key                 | Values                                              | Default
---------------------|-----------------------------------------------------|----------
-optimizationLevel   | `HTMLMinify::OPTIMIZATION_ADVANCED` or<br/>`HTMLMinify::OPTIMIZATION_SIMPLE` | `HTMLMinify::OPTIMIZATION_ADVANCED`
-doctype             | `HTMLMinify::DOCTYPE_HTML5`<br/>`HTMLMinify::DOCTYPE_XHTML1`<br/>`HTMLMinify::DOCTYPE_HTML4` | `HTMLMinify::DOCTYPE_HTML5`
-removeComment       | `true` or `false`                                   | `false`
-removeDuplicateAttribute | `true` or `false`                              | `true`
-
-Please refer to the documentation of [zaininnari/html-minifier](https://github.com/zaininnari/html-minifier) for full descriptions of these options. Note that the default options used by this package differ from html-minifier's.
-
 
 ## License
 The MIT License (MIT)
